@@ -19,16 +19,16 @@ const App = () => {
         <div>
          <input type="text" value={todo} onChange={(e)=>setTodo(e.target.value)}></input>
          <button onClick={addonlist}>Add Todo</button>
+         <ul>
          {
             add.map((list,index)=>(
-                <div key={index}>
-                    <p>{list}
-                    <button onClick={()=>delet(index)}>Delete</button>
-                    </p>
-                    
-                </div>
+                <li key={index}>
+                        {list}
+                        <button onClick={()=>delet(index)}>delete</button>
+                    </li>
             ))
         }
+         </ul>
         </div>
         
     )
