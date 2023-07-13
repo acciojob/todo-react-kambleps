@@ -9,11 +9,11 @@ const App = () => {
     function addonlist(){
         setAdd([...add,todo])
     }
-    function delet(index){
-         const updatedtodo = [...add];
-         updatedtodo.splice(index,1)
-         setAdd(updatedtodo);
-    }
+    // function delet(index){
+    //      const updatedtodo = [...add];
+    //      updatedtodo.splice(index,1)
+    //      setAdd(updatedtodo);
+    // }
    
     return(
         <div>
@@ -24,7 +24,7 @@ const App = () => {
             add.map((list,index)=>(
                 <li key={index} className="li">
                         {list}
-                        <button onClick={()=>delet(index)}>delete</button>
+                        {/* <button onClick={()=>delet(index)}>delete</button> */}
                     </li>
             ))
         }
