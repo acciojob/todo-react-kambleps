@@ -22,7 +22,7 @@ const App = () => {
          <ul>
          {
             add.map((list,index)=>(
-                <li key={index}>
+                <li key={index} className="li">
                         {list}
                         <button onClick={()=>delet(index)}>delete</button>
                     </li>
